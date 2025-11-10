@@ -21,7 +21,7 @@ nav a:hover{background:var(--violet-2);color:#fff}
 .nav-right{margin-left:auto;display:flex;gap:12px;align-items:center}
 .btn-outline{border:2px solid var(--violet);padding:8px 12px;border-radius:8px;background:transparent;color:var(--violet);font-weight:700}
 .btn-solid{background:var(--violet);color:#fff;padding:9px 14px;border-radius:8px;border:0;font-weight:700}
-.hero{background:linear-gradient(180deg, rgba(58,12,163,0.88), rgba(91,33,182,0.78));color:#300158;padding:56px 0}
+.hero{background:linear-gradient(180deg, rgba(58,12,163,0.88), rgba(91,33,182,0.78));color:#ffffff;padding:56px 0}
 .hero .container{display:flex;gap:28px;align-items:center}
 .hero h1{margin:0;font-size:28px}
 .hero p{margin:8px 0 0;color:rgb(253, 253, 253);max-width:780px}
