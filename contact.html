@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Contact — Grant Thornton (maquette)</title>
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="topbar"><div class="container" style="display:flex;justify-content:space-between;align-items:center"><div class="small">Grant Thornton — Maquette</div><div class="small">© <span id="year-top5"></span></div></div></div>
+
+<header>
+  <div class="container branding">
+    <div class="logo">Grant Thornton<span style="color:var(--violet-2);font-weight:500">.</span></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="service.html" aria-current="page">Services</a></li>
+        <li><a href="article.html">Actualités</a></li>
+        <li><a href="expert.html">Experts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <form id="siteSearch" style="display:flex;align-items:center;gap:8px">
+        <input type="search" placeholder="Rechercher..." style="padding:8px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)">
+        <button class="btn-outline" type="submit">Rechercher</button>
+      </form>
+      <a class="btn-solid" href="contact.html">Contactez-nous</a>
+    </div>
+  </div>
+</header>
+
+<section style="padding:28px 0;background:#fff">
+  <div class="container card">
+    <h1>Contactez-nous</h1>
+    <p class="muted">Remplissez le formulaire ci-dessous et nous vous répondrons rapidement.</p>
+    <form onsubmit="event.preventDefault(); alert('Formulaire simulé — merci !')">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+        <input type="text" placeholder="Nom" style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)">
+        <input type="email" placeholder="Email" style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)">
+        <input type="text" placeholder="Société" style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)">
+        <input type="tel" placeholder="Téléphone" style="padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)">
+      </div>
+      <textarea placeholder="Message" style="width:100%;min-height:140px;margin-top:12px;padding:10px;border-radius:8px;border:1px solid rgba(0,0,0,0.06)"></textarea>
+      <div style="margin-top:12px"><button class="btn-solid" type="submit">Envoyer</button></div>
+    </form>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <strong>Grant Thornton (maquette)</strong>
+        <p class="muted">Cabinet membre du réseau international — services d'audit, fiscalité et conseil.</p>
+      </div>
+      <div>
+        <strong>Nos services</strong>
+        <ul class="muted" style="padding-left:0;list-style:none;margin-top:8px">
+          <li><a href="service.html">Conseil juridique</a></li>
+          <li><a href="service.html">Fiscalité</a></li>
+          <li><a href="service.html">Conformité</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Ressources</strong>
+        <ul class="muted" style="padding-left:0;list-style:none;margin-top:8px">
+          <li><a href="article.html">Alertes fiscales</a></li>
+          <li><a href="article.html">Webinars</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Contact</strong>
+        <div class="muted" style="margin-top:8px">Tél: +33 1 41 16 27 11</div>
+        <div class="muted">Email: contact@grantthornton.example</div>
+      </div>
+    </div>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-top:20px" class="small">
+      <div>© <span id="year"></span> Grant Thornton — Maquette</div>
+      <div><a href="#" class="muted">Mentions légales</a> · <a href="#" class="muted">Politique de confidentialité</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year-top5') && (document.getElementById('year-top5').textContent=new Date().getFullYear());</script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
